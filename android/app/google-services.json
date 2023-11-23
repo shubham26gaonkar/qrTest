@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "610843158428",
+    "project_id": "shopproject-e10f0",
+    "storage_bucket": "shopproject-e10f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610843158428:android:640d5215e8de2c95348a59",
+        "android_client_info": {
+          "package_name": "com.qrtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt1dv5SHLFCxbR4DN_I5ZORyLFEWSvovs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
