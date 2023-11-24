@@ -22,7 +22,7 @@ const Home = ({navigation}) => {
       <Text style={styles.headLine}>Enter PIN</Text>
       <TextInput
         placeholder="Enter 5 Digit PIN.."
-        style={{ fontSize: 18, width: 200, height: 50, borderWidth: 2, borderRadius: 8,  borderColor: '#000000', backgroundColor: '#fff' }}
+        style={{ fontSize: 18, color: '#000000', width: 200, height: 50, borderWidth: 2, borderRadius: 8,  borderColor: '#000000', backgroundColor: '#fff' }}
         keyboardType="numeric"
         secureTextEntry={true}
         onChangeText={(value) => handlePinEntry(value)}

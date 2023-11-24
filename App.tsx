@@ -34,6 +34,8 @@ import Viewcart from './Screens/Viewcart';
 import Menu from './Screens/Menu';
 import Splash_1 from './Screens/Splash_1';
 import Splash from './Screens/Splash';
+import QRCodeScanner from './Screens/Scanner'
+
 
 
 
@@ -81,7 +83,7 @@ function App(): JSX.Element {
       <Stack.Screen name='Splash_1' component={Splash_1} options={{headerShown:false}}/>
       <Stack.Screen name = 'Menu' component={Menu}/>
       <Stack.Screen name = 'Viewcart' component={Viewcart}/>
-      {/* <Stack.Screen name='Scanner' component={Scanner}/> */}
+      <Stack.Screen name='QRCodeScanner' component={QRCodeScanner}/>
     </Stack.Navigator>
   </NavigationContainer>
   )
