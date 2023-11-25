@@ -35,8 +35,11 @@ import Menu from './Screens/Menu';
 import Splash_1 from './Screens/Splash_1';
 import Splash from './Screens/Splash';
 import QRCodeScanner from './Screens/Scanner'
-
-
+import Scanner1 from './Screens/Scanner1';
+import Splash_2 from './Screens/Splash_2';
+import CheckOut from './Screens/CheckOut';
+import GenerateBill from './Screens/GenerateBill';
+// import CameraWrapper from './Screens/CamWrapper';
 
 
 
@@ -77,13 +80,30 @@ const Stack = createNativeStackNavigator();
 function App(): JSX.Element {
   return(
     <NavigationContainer>
-    <Stack.Navigator>
+    <Stack.Navigator 
+    screenOptions={{
+      headerStyle: {
+        backgroundColor: '#cdddf7', // Set your desired header color
+      },
+      headerTintColor: '#000', // Set text color for header titles
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: 25, // Adjust font size if needed
+      },
+      headerTitle: 'ScanCart',
+      headerTitleAlign: 'center',
+    }}>
       <Stack.Screen name='SplashScreen' component={Splash} options={{headerShown:false}}/>
       <Stack.Screen name='Home' component={Home} options={{headerShown:false}}/>
       <Stack.Screen name='Splash_1' component={Splash_1} options={{headerShown:false}}/>
-      <Stack.Screen name = 'Menu' component={Menu}/>
+      <Stack.Screen name = 'Menu' component={Menu} options={{headerShown:false}}/>
+      <Stack.Screen name = 'Scanner1' component={Scanner1} options={{headerShown:false}}/>
+      <Stack.Screen name='Splash_2' component={Splash_2}/>
+      <Stack.Screen name='CheckOut' component={CheckOut} options={{headerShown:false}}/>
+      <Stack.Screen name='GenerateBill' component={GenerateBill} options={{headerShown:false}}/>
+      {/* <Stack.Screen name = 'CamWrapper' component={CameraWrapper}/> */}
       <Stack.Screen name = 'Viewcart' component={Viewcart}/>
-      <Stack.Screen name='QRCodeScanner' component={QRCodeScanner}/>
+      {/* <Stack.Screen name='QRCodeScanner' component={QRCodeScanner}/> */}
     </Stack.Navigator>
   </NavigationContainer>
   )

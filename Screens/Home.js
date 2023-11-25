@@ -11,7 +11,7 @@ const Home = ({navigation}) => {
   const handleVerifyPin = () => {
     if (pin === '12345') {
       // Navigate to another page
-      navigation.navigate('Splash_1');
+      navigation.navigate('Menu');
     } else {
       Alert.alert('Incorrect PIN. Please try again.');
     }

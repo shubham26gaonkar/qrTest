@@ -23,7 +23,7 @@ export default function  Viewcart({navigation}) {
 
   return (
     <View style={styles.container}>
-      <Text> Items</Text>
+      <Text style={{color: 'black'}}> Items</Text>
 
     </View>
   );

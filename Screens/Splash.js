@@ -12,7 +12,7 @@ const Splash = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <Image source={require('./Cart-1.png')} style={styles.image} />
+      <Image source={require('../Assets/Scan.gif')} style={styles.image} />
       <ActivityIndicator size="large" color="#0000FF" style={styles.loader} />
       {/* <Text style={styles.title}>Welcome to QR Scanner App</Text> */}
       <Text style={styles.message}>Initializing...</Text>
@@ -28,9 +28,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#E8DCFF',
   },
   image : {
-    width: '50%',
-    height: '50%',
-    marginTop: '50%',
+    width: '80%',
+    height: '80%',
+    marginTop: '10%',
     resizeMode: 'contain',
   },
   title: {

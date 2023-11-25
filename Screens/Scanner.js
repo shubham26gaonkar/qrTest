@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { Camera, useCameraDevice, useCameraPermission, useCodeScanner } from 'react-native-vision-camera';
 
-const items=[{id: 'PRID1001', Product_name: 'Tomato Ketchup',Price:150}, 
+export const items=[{id: 'PRID1001', Product_name: 'Tomato Ketchup',Price:150}, 
   {id: 2, Product_name: 'Dal',Price:200},
    {id: 3, Product_name: 'Rice',Price:100},
    ]

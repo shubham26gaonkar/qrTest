@@ -4,13 +4,13 @@ import React,{useEffect} from 'react'
 const Splash_1 = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace('Menu')
+      navigation.popToTop()
     }, 1000); // Delay for 3 seconds
   }, []);
 
   return (
     <View style={styles.container}>
-      <Image source={require('./verified.png')} style={styles.image} />
+      <Image source={require('../Assets/verified.png')} style={styles.image} />
       {/* <ActivityIndicator size="large" color="#0000FF" style={styles.loader} /> */}
       {/* <Text style={styles.title}>Welcome to QR Scanner App</Text> */}
       {/* <Text style={styles.message}>...</Text> */}

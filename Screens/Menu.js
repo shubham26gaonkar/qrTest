@@ -8,13 +8,13 @@ export default function Menu ({navigation}) {
     <View style={styles.container}>
       <TouchableOpacity 
         style={styles.title} 
-        onPress={()=>{navigation.navigate('QRCodeScanner')}}>
+        onPress={()=>{navigation.navigate('Scanner1')}}>
         <Text style={{ color: '#fff', fontSize: 25, fontWeight: 'bold' }}>Add To Cart</Text>
       </TouchableOpacity>
 
       <TouchableOpacity 
         style={styles.title} 
-        onPress={()=>{navigation.navigate('Viewcart')}}>
+        onPress={()=>{navigation.navigate('CheckOut')}}>
         <Text style={{ color: '#fff', fontSize: 25, fontWeight: 'bold' }}>View Cart</Text>
       </TouchableOpacity>
 
